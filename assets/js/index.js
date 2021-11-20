@@ -1,24 +1,50 @@
-// To see things inside the browser's console:
-// console.log('Hey there')
+// Primative types:
 
-// var - don't use
-var my_name = 'Ali Karbassi'
+// - Boolean (true/false)
+let is_over_21 = false
+console.log(is_over_21)
 
-console.log(my_name)
+// - Null (not set-ish)
+let next_child = null
 
-// let - mutable
-let fav_planet = 'Earth'
+// - Undefined
+let x = undefined
 
-console.log(fav_planet)
+// - Number
+let salary = 8000000
+console.log(salary)
+// salary = 123456789012345678901234567890
+// console.log(salary)
 
-fav_planet = 'Saturn'
+// - String
+const my_name = 'Ali'
 
-console.log(fav_planet)
+// Object
+const brenen_job = 'somewhere'
+const person = {
+  height: 72, // inch
+  weight: 100,
+  name: {
+    first: 'Brenan',
+    middle: undefined,
+    last: 'Corcoran',
+  },
+  job: brenen_job,
+}
+// console.log(person)
 
-// const - immutable
-const fav_color = 'black'
-
-console.log(fav_color)
-
-// This won't work!
-// fav_color = 'yellow'
+// Object - array
+const groceries = [
+  'Milk',
+  'Eggs',
+  'Bacon',
+  'Bread',
+  'Milk',
+  'Eggs',
+  'Bacon',
+  'Bread',
+  'Milk',
+  'Eggs',
+  'Bacon',
+  'Bread',
+]
