@@ -20,4 +20,4 @@ function doAddition(firstElementID, secondElementID, sumElementID) {
   $sum.value = sum
 }
 
-doAddition('#f-irst', '#s-econd', '#s-um')
+doAddition('#first', '#second', '#sum')
