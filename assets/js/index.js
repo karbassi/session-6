@@ -5,6 +5,14 @@ function doAddition(firstElementID, secondElementID, sumElementID) {
   // get 'second' HTML element
   const $second = document.querySelector(secondElementID)
 
+  if ($first.value.length == 0) {
+    return
+  }
+
+  if ($second.value.length == 0) {
+    return
+  }
+
   // convert strings to numbers
   const firstValue = parseFloat($first.value)
   const secondValue = parseFloat($second.value)
@@ -20,6 +28,17 @@ function doAddition(firstElementID, secondElementID, sumElementID) {
   $sum.value = sum
 }
 
-// doAddition('#first', '#second', '#sum')
-
 // create a const called 'solveBtn' and assign it to the button.
+const solveBtn = document.querySelector('#solve-btn')
+
+solveBtn.addEventListener('click', solveBtnOnClick)
+
+function solveBtnOnClick() {
+  doAddition('#first', '#second', '#sum')
+}
+
+const $first = document.querySelector('#first')
+const $second = document.querySelector('#second')
+
+$first.addEventListener('blur', solveBtnOnClick)
+$second.addEventListener('blur', solveBtnOnClick)
