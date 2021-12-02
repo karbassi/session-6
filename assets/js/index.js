@@ -20,4 +20,6 @@ function doAddition(firstElementID, secondElementID, sumElementID) {
   $sum.value = sum
 }
 
-doAddition('#first', '#second', '#sum')
+// doAddition('#first', '#second', '#sum')
+
+// create a const called 'solveBtn' and assign it to the button.
